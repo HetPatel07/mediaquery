@@ -18,11 +18,18 @@
             height: 100%;
             width: 100%;
             margin: 0;
+            font-family: sans-serif;
+            text-align: center;
+            background-image: url(images/website-design-background.png);
+            background-position: center;
+            background-size: cover;
+            color: #f3f3f3;
         }
 
         .main {
-            height: 100%;
-            width: 100%;
+            height: 50%;
+            width: 80%;
+            margin: auto;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-column-gap: 10px;
@@ -30,20 +37,30 @@
 
         .one {
             padding: 20px;
-            border: 5px solid #333;
+            border: 5px solid #f8f8f8;
         }
-
+        img{
+            transition: 1s all;
+        }
         .one img:hover {
             transform: scale(1.1);
             transition: 1s all;
+        }
+        h1{
+            margin: 20px 0;
+        }
+        p{
+            margin: 0 0 20px 0;
         }
     </style>
 </head>
 
 <body>
+   <h1>Responsive Layout</h1>
+   <p>Designed three differnt layouts for learning purpose.</p>
     <div class="main">
         <div class="one">
-        <a href="layout2.html"><img src="images/screenshot-responsivelayout1.netlify.com-2019.01.25-16-10-03.png" width="100%" height="100%" alt=""></a></div>
+            <a href="layout2.html"><img src="images/screenshot-responsivelayout1.netlify.com-2019.01.25-16-10-03.png" width="100%" height="100%" alt=""></a></div>
         <div class="one"><a href="layout1.html"><img src="images/screenshot-responsivelayout.netlify.com-2019.01.25-13-40-38.png" width="100%" height="100%" alt=""></a></div>
         <div class="one"><a href="layout3.html"><img src="images/screenshot-responivelayout2.netlify.com-2019.01.25-18-30-29.png" width="100%" height="100%" alt=""></a></div>
     </div>
